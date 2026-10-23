@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexura Growth | Full-Funnel Web, Paid Ads & n8n AI Automations</title>
+  <meta name="description" content="We build high-converting websites, run profitable paid ads, and deploy autonomous n8n AI pipelines that capture and qualify leads 24/7." />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Tactile 3D Button Styles */
+    .btn-3d-primary {
+      position: relative;
+      background: linear-gradient(180deg, #6366f1 0%, #4f46e5 100%);
+      border: 1px solid #818cf8;
+      box-shadow: 0 6px 0 #312e81, 0 14px 20px rgba(99, 102, 241, 0.35);
+      transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn-3d-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 0 #312e81, 0 18px 24px rgba(99, 102, 241, 0.45);
+    }
+    .btn-3d-primary:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 #312e81, 0 6px 10px rgba(99, 102, 241, 0.25);
+    }
+
+    .btn-3d-dark {
+      position: relative;
+      background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid #334155;
+      box-shadow: 0 5px 0 #020617, 0 10px 18px rgba(0, 0, 0, 0.6);
+      transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn-3d-dark:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 0 #020617, 0 14px 22px rgba(0, 0, 0, 0.7);
+    }
+    .btn-3d-dark:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #020617, 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Ambient Glows */
+    .glow-conic {
+      background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-indigo-500 selection:text-white">
+
+  <!-- NAVIGATION -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-400 flex items-center justify-center shadow-lg shadow-indigo-500/20">
+          <i data-lucide="cpu" class="w-5 h-5 text-white"></i>
+        </div>
+        <span class="text-xl font-extrabold tracking-tight">Nexura<span class="text-indigo-400">Growth</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#system" class="hover:text-white transition">The System</a>
+        <a href="#pipeline" class="hover:text-white transition">n8n Pipeline</a>
+        <a href="#calculator" class="hover:text-white transition">ROI Calculator</a>
+        <a href="#pricing" class="hover:text-white transition">Pricing</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <!-- Replace link with your Calendly / Cal.com link -->
+        <a href="https://cal.com" target="_blank" class="btn-3d-primary hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm text-white">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Book Strategy Call</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 glow-conic">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-indigo-500/30 bg-indigo-950/40 text-indigo-300 text-xs font-semibold mb-8 backdrop-blur-sm">
+        <span class="flex h-2 w-2 rounded-full bg-indigo-400 animate-pulse"></span>
+        Paid Ads + Conversion Websites + n8n AI Lead Engines
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-white">
+        We turn ad clicks into customers—<br class="hidden sm:block" />
+        <span class="bg-gradient-to-r from-indigo-400 via-sky-300 to-purple-400 bg-clip-text text-transparent">
+          without you touching a spreadsheet.
+        </span>
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        Stop losing qualified leads to slow follow-ups. We engineer high-converting web applications, manage targeted ad campaigns, and wire up 24/7 autonomous n8n workflows that instantly engage every prospect.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://cal.com" target="_blank" class="btn-3d-primary w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base text-white flex items-center justify-center gap-2">
+          <span>Schedule 15-Min Free Pipeline Audit</span>
+          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+        <a href="#pipeline" class="btn-3d-dark w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-base text-slate-300 hover:text-white flex items-center justify-center gap-2">
+          <i data-lucide="play" class="w-4 h-4"></i>
+          <span>See How It Works</span>
+        </a>
+      </div>
+
+      <!-- Live metrics -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto border-t border-slate-800/80 pt-10 text-left">
+        <div>
+          <div class="text-3xl font-extrabold text-white">&lt; 45s</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1">Lead Response Time</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-indigo-400">3.8x</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1">Average ROAS</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-white">20+ hrs</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1">Weekly Admin Saved</div>
+        </div>
+        <div>
+          <div class="text-3xl font-extrabold text-emerald-400">100%</div>
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1">Custom Built Stack</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE 3 PILLARS SYSTEM -->
+  <section id="system" class="py-24 bg-slate-900/50 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-bold text-indigo-400 tracking-widest mb-3">The Revenue Engine</h2>
+        <p class="text-3xl md:text-5xl font-extrabold tracking-tight">The 3-Step Full Pipeline</p>
+        <p class="text-slate-400 mt-4">Most agencies only sell one slice. We connect the entire chain so zero revenue falls through the cracks.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Pillar 1 -->
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition duration-300 relative group">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-6">
+            <i data-lucide="target" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">1. Precision Paid Ads</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Meta & Google campaigns designed strictly for high-intent customer acquisition. We handle creative design, copywriting, targeting, and ongoing bid optimization.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> High-Intent Search & Retargeting</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Dynamic Creative Testing</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition duration-300 relative group">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-6">
+            <i data-lucide="layout" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">2. High-Conversion Web</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Lightning-fast web pages optimized for mobile conversions. We strip out the fluff and guide visitors straight into booking appointments or purchasing.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Sub-second page load times</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Built-in analytics & heatmaps</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="p-8 rounded-2xl bg-slate-900 border border-indigo-500/40 shadow-xl shadow-indigo-950/40 relative group">
+          <span class="absolute -top-3 right-6 px-3 py-1 bg-indigo-600 text-[10px] font-extrabold uppercase tracking-wider rounded-full text-white">Your Secret Weapon</span>
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/20 border border-indigo-500/30 text-indigo-300 flex items-center justify-center mb-6">
+            <i data-lucide="bot" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">3. n8n AI Automation</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Custom n8n nodes connect your ads and forms to AI agents. In seconds, leads are enriched, qualified via SMS/WhatsApp, synced into your CRM, and notified to your team.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Speed-to-lead under 60 seconds</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> HubSpot, GoHighLevel, Slack & Sheets sync</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- N8N PIPELINE VISUALIZER -->
+  <section id="pipeline" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-bold text-indigo-400 tracking-widest mb-3">Workflow Anatomy</h2>
+        <p class="text-3xl md:text-5xl font-extrabold tracking-tight">How our n8n Automation Engine Works</p>
+        <p class="text-slate-400 mt-4">Here is the exact architecture we connect directly to your business.</p>
+      </div>
+
+      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
+          
+          <!-- Node 1 -->
+          <div class="bg-slate-950/80 p-5 rounded-2xl border border-slate-800 flex flex-col items-start justify-between">
+            <div>
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Step 1 • Trigger</div>
+              <div class="font-bold text-white text-base flex items-center gap-2">
+                <i data-lucide="mouse-pointer" class="w-4 h-4 text-indigo-400"></i>
+                Ad Click / Form
+              </div>
+              <p class="text-xs text-slate-400 mt-2">Prospect fills high-converting lead questionnaire.</p>
+            </div>
+            <div class="mt-6 text-[11px] font-mono text-emerald-400 bg-emerald-950/40 px-2.5 py-1 rounded-md border border-emerald-800/50">
+              Webhook: 200 OK
+            </div>
+          </div>
+
+          <!-- Node 2 -->
+          <div class="bg-slate-950/80 p-5 rounded-2xl border border-indigo-500/40 flex flex-col items-start justify-between">
+            <div>
+              <div class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest mb-2">Step 2 • n8n + AI</div>
+              <div class="font-bold text-white text-base flex items-center gap-2">
+                <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i>
+                LLM Qualification
+              </div>
+              <p class="text-xs text-slate-400 mt-2">AI extracts budget, evaluates lead intent, and scores readiness.</p>
+            </div>
+            <div class="mt-6 text-[11px] font-mono text-indigo-300 bg-indigo-950/40 px-2.5 py-1 rounded-md border border-indigo-800/50">
+              Score: High Priority
+            </div>
+          </div>
+
+          <!-- Node 3 -->
+          <div class="bg-slate-950/80 p-5 rounded-2xl border border-slate-800 flex flex-col items-start justify-between">
+            <div>
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Step 3 • Action</div>
+              <div class="font-bold text-white text-base flex items-center gap-2">
+                <i data-lucide="message-square" class="w-4 h-4 text-indigo-400"></i>
+                Instant AI SMS
+              </div>
+              <p class="text-xs text-slate-400 mt-2">Leads receive a conversational booking link via SMS in under 45 seconds.</p>
+            </div>
+            <div class="mt-6 text-[11px] font-mono text-sky-400 bg-sky-950/40 px-2.5 py-1 rounded-md border border-sky-800/50">
+              Dispatched 0.4s
+            </div>
+          </div>
+
+          <!-- Node 4 -->
+          <div class="bg-slate-950/80 p-5 rounded-2xl border border-slate-800 flex flex-col items-start justify-between">
+            <div>
+              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Step 4 • Fulfillment</div>
+              <div class="font-bold text-white text-base flex items-center gap-2">
+                <i data-lucide="database" class="w-4 h-4 text-indigo-400"></i>
+                CRM & Slack Sync
+              </div>
+              <p class="text-xs text-slate-400 mt-2">Calendar booking confirmed, deal created in CRM, alert sent to staff.</p>
+            </div>
+            <div class="mt-6 text-[11px] font-mono text-emerald-400 bg-emerald-950/40 px-2.5 py-1 rounded-md border border-emerald-800/50">
+              Synced & Closed
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-8 text-center">
+          <a href="https://cal.com" target="_blank" class="btn-3d-primary inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-white">
+            <span>Automate Your Pipeline</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI CALCULATOR -->
+  <section id="calculator" class="py-24 bg-slate-900/40 border-y border-slate-800/80">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-xs uppercase font-bold text-indigo-400 tracking-widest mb-3">Interactive Estimator</h2>
+        <p class="text-3xl font-extrabold tracking-tight">Calculate Your Lost Revenue to Slow Follow-Ups</p>
+      </div>
+
+      <div class="p-8 sm:p-10 rounded-3xl bg-slate-950 border border-slate-800 shadow-2xl">
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="font-semibold text-sm text-slate-200">Monthly Inquiries / Leads from Ads</label>
+              <span id="leads-display" class="font-mono text-indigo-400 font-bold text-lg">150 leads</span>
+            </div>
+            <input id="leads-slider" type="range" min="20" max="1000" step="10" value="150" class="w-full accent-indigo-500 cursor-pointer">
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <label class="font-semibold text-sm text-slate-200">Average Deal / Customer Value ($)</label>
+              <span id="deal-display" class="font-mono text-indigo-400 font-bold text-lg">$1,500</span>
+            </div>
+            <input id="deal-slider" type="range" min="200" max="10000" step="100" value="1500" class="w-full accent-indigo-500 cursor-pointer">
+          </div>
+        </div>
+
+        <div class="mt-10 p-6 rounded-2xl bg-indigo-950/30 border border-indigo-500/30 grid sm:grid-cols-2 gap-6 items-center">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-slate-400 font-bold">Estimated Extra Revenue Recovered</div>
+            <div id="revenue-recovered" class="text-3xl sm:text-4xl font-extrabold text-emerald-400 mt-1">$33,750 / mo</div>
+            <p class="text-xs text-slate-400 mt-1">Based on converting just 15% more lost leads with sub-minute automated replies.</p>
+          </div>
+          <div class="flex justify-start sm:justify-end">
+            <a href="https://cal.com" target="_blank" class="btn-3d-primary px-6 py-3.5 rounded-xl font-bold text-sm text-white flex items-center gap-2">
+              <span>Claim This Revenue</span>
+              <i data-lucide="zap" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS / REVIEWS -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-bold text-indigo-400 tracking-widest mb-3">Proof & Performance</h2>
+        <p class="text-3xl md:text-5xl font-extrabold tracking-tight">Real Results For Real Businesses</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Review 1 -->
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center gap-1 text-amber-400 mb-4">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            "Before Nexura, our staff took 4 hours to call back ad leads. Nexura's n8n workflow sends an SMS within 30 seconds and qualifies them automatically. Our appointment booking rate literally tripled."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-xs text-white">MK</div>
+            <div>
+              <div class="text-sm font-bold text-white">Marcus Vance</div>
+              <div class="text-xs text-slate-400">Owner, Vance Architectural Group</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center gap-1 text-amber-400 mb-4">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            "They rebuilt our clinic's site and took over our Meta Ads. The site loads instantly, looks world-class, and automatically routes consultation requests into Google Calendar. Flawless execution."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-xs text-white">DL</div>
+            <div>
+              <div class="text-sm font-bold text-white">Dr. Sarah Lindqvist</div>
+              <div class="text-xs text-slate-400">Director, Apex Aesthetics</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+          <div class="flex items-center gap-1 text-amber-400 mb-4">
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            "We were paying a full-time VA $2,500/month just to manage leads across our CRM and email. Nexura replaced that entire workload with a rock-solid n8n pipeline that never takes sick leave."
+          </p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-xs text-white">TR</div>
+            <div>
+              <div class="text-sm font-bold text-white">Tyler Ross</div>
+              <div class="text-xs text-slate-400">Founder, ScalePoint Consulting</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING PACKAGES -->
+  <section id="pricing" class="py-24 bg-slate-900/50 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs uppercase font-bold text-indigo-400 tracking-widest mb-3">Transparent Investments</h2>
+        <p class="text-3xl md:text-5xl font-extrabold tracking-tight">Flexible Packages Built for Growth</p>
+        <p class="text-slate-400 mt-4">Pick a single solution or deploy the entire autonomous revenue pipeline.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Tier 1: Website Only -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white">Conversion Website</h3>
+            <p class="text-slate-400 text-xs mt-1">For brands who need a high-converting web presence.</p>
+            <div class="mt-6 flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-white">$1,950</span>
+              <span class="text-xs text-slate-500 uppercase font-semibold">one-time</span>
+            </div>
+            <ul class="mt-8 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Custom high-converting landing page</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 100% mobile responsive & sub-second load</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Integrated booking calendar (Cal/Calendly)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Conversion copywriting & SEO foundations</li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a href="https://cal.com" target="_blank" class="btn-3d-dark w-full py-3.5 rounded-xl font-bold text-sm text-center block text-white">
+              Choose Website Only
+            </a>
+          </div>
+        </div>
+
+        <!-- Tier 2: The Flagship (Most Popular) -->
+        <div class="p-8 rounded-3xl bg-slate-900 border-2 border-indigo-500 relative flex flex-col justify-between shadow-2xl shadow-indigo-950/60">
+          <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-indigo-600 text-white text-[11px] font-extrabold uppercase tracking-wider rounded-full shadow-md">
+            Most Popular System
+          </span>
+          <div>
+            <h3 class="text-xl font-bold text-white">The Autonomous Pipeline</h3>
+            <p class="text-slate-400 text-xs mt-1">Traffic + Conversion + 24/7 AI Automation.</p>
+            <div class="mt-6 flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-indigo-400">$3,450</span>
+              <span class="text-xs text-slate-500 uppercase font-semibold">setup + monthly retainer</span>
+            </div>
+            <ul class="mt-8 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2 font-semibold text-white"><i data-lucide="check" class="w-4 h-4 text-indigo-400"></i> Everything in Conversion Website</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Meta & Google Ads setup & continuous management</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Full n8n speed-to-lead automated engine</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> AI lead qualifier (SMS / WhatsApp instant follow-up)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> CRM integrations (HubSpot, GoHighLevel, Sheets)</li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a href="https://cal.com" target="_blank" class="btn-3d-primary w-full py-3.5 rounded-xl font-bold text-sm text-center block text-white">
+              Deploy The Full Pipeline
+            </a>
+          </div>
+        </div>
+
+        <!-- Tier 3: Custom Automations -->
+        <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white">Custom n8n Automations</h3>
+            <p class="text-slate-400 text-xs mt-1">For businesses seeking to automate internal operations.</p>
+            <div class="mt-6 flex items-baseline gap-2">
+              <span class="text-4xl font-extrabold text-white">Custom</span>
+              <span class="text-xs text-slate-500 uppercase font-semibold">based on scope</span>
+            </div>
+            <ul class="mt-8 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Internal operational n8n architecture</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Custom OpenAI / Claude API tool calling & agents</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Client onboarding automation & invoicing sync</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Dedicated monitoring & workflow maintenance</li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <a href="https://cal.com" target="_blank" class="btn-3d-dark w-full py-3.5 rounded-xl font-bold text-sm text-center block text-white">
+              Book Custom Scoping Call
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="py-24">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-xs uppercase font-bold text-indigo-400 tracking-widest mb-3">Got Questions?</h2>
+        <p class="text-3xl font-extrabold tracking-tight">Frequently Asked Questions</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="border border-slate-800 rounded-2xl bg-slate-900/50 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center text-white font-semibold">
+            <span>What makes n8n better than Zapier or Make?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-indigo-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-400 text-sm leading-relaxed border-t border-slate-800/50 pt-4">
+            n8n is open-source, highly secure, and capable of complex branching logic without charging steep per-task fees like Zapier. It enables custom JavaScript, private database connections, and secure AI agent setups that ordinary drag-and-drop tools cannot support.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="border border-slate-800 rounded-2xl bg-slate-900/50 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center text-white font-semibold">
+            <span>Do I need to pay for ad spend separately?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-indigo-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-400 text-sm leading-relaxed border-t border-slate-800/50 pt-4">
+            Yes. Ad spend is billed directly to your own Meta or Google Ads payment accounts. Our retainer covers strategy, creative generation, copy, technical implementation, and full management.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="border border-slate-800 rounded-2xl bg-slate-900/50 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center text-white font-semibold">
+            <span>How fast can our pipeline go live?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-indigo-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-400 text-sm leading-relaxed border-t border-slate-800/50 pt-4">
+            A standalone website or n8n automated workflow typically goes live in 7 to 10 days. The complete flagship pipeline (Web + Ads + AI engine) is thoroughly tested and running within 14 business days.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="border border-slate-800 rounded-2xl bg-slate-900/50 overflow-hidden">
+          <button class="faq-toggle w-full px-6 py-5 text-left flex justify-between items-center text-white font-semibold">
+            <span>What do you need from us to get started?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-indigo-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-400 text-sm leading-relaxed border-t border-slate-800/50 pt-4">
+            Just a 15-minute onboarding call where we review your offer, target customer profiles, and any existing tools or CRM you use. We build, test, and present the finished system to you for sign-off.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA BANNER -->
+  <section class="py-20 relative">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="rounded-3xl bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950 border border-indigo-500/40 p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+          Ready to put your client acquisition on autopilot?
+        </h2>
+        <p class="text-slate-300 mt-4 max-w-xl mx-auto text-base">
+          Let’s review your current pipeline on a short 15-minute call. We'll show you where leads are dropping off and map out your custom automated engine.
+        </p>
+        <div class="mt-8 flex justify-center">
+          <a href="https://cal.com" target="_blank" class="btn-3d-primary px-8 py-4 rounded-xl font-extrabold text-base text-white inline-flex items-center gap-2">
+            <span>Book Your Free Strategy Audit</span>
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 py-12 text-slate-500 text-xs text-center">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2 font-bold text-slate-300 text-sm">
+        <i data-lucide="cpu" class="w-4 h-4 text-indigo-400"></i>
+        <span>Nexura Growth</span>
+      </div>
+      <p>© 2026 Nexura Growth. All rights reserved. High-performance web, ads, and n8n automations.</p>
+      <div class="flex items-center gap-6 text-slate-400">
+        <a href="#system" class="hover:text-white transition">Services</a>
+        <a href="#pricing" class="hover:text-white transition">Pricing</a>
+        <a href="https://cal.com" target="_blank" class="hover:text-white transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // FAQ Accordion Toggle
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('i');
+        const isOpen = !content.classList.contains('hidden');
+
+        // Close all others
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-toggle i').forEach(i => i.style.transform = 'rotate(0deg)');
+
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // ROI Calculator Live Calculations
+    const leadsSlider = document.getElementById('leads-slider');
+    const dealSlider = document.getElementById('deal-slider');
+    const leadsDisplay = document.getElementById('leads-display');
+    const dealDisplay = document.getElementById('deal-display');
+    const revenueRecovered = document.getElementById('revenue-recovered');
+
+    function calculateROI() {
+      const leads = parseInt(leadsSlider.value);
+      const deal = parseInt(dealSlider.value);
+
+      leadsDisplay.textContent = `${leads} leads`;
+      dealDisplay.textContent = `$${deal.toLocaleString()}`;
+
+      // 15% increase in conversion through instant n8n speed-to-lead
+      const extraDeals = leads * 0.15;
+      const recoveredVal = Math.round(extraDeals * deal);
+      revenueRecovered.textContent = `$${recoveredVal.toLocaleString()} / mo`;
+    }
+
+    leadsSlider.addEventListener('input', calculateROI);
+    dealSlider.addEventListener('input', calculateROI);
+  </script>
+</body>
+</html>
